@@ -43,7 +43,7 @@ function Services() {
       desc: "Break free from smoking, tobacco, gaming, sugar, and mobile addiction using powerful subconscious reprogramming.",
       longDesc: "Specialized hypnotherapy for various addictions including smoking, chewing tobacco, gaming addiction, sugar dependency, and mobile overuse.",
       features: ["Smoking Cessation", "Tobacco De-addiction", "Gaming Control", "Sugar Management", "Mobile Balance"],
-      duration: "60-90 min",
+      // duration: "60-90 min",
       color: "#7B4BFF",
       category: "ADDICTION RECOVERY"
     },
@@ -53,7 +53,7 @@ function Services() {
       desc: "Overcome fears and phobias by reprogramming your subconscious mind's response to triggers.",
       longDesc: "Effective treatment for various phobias including fear of heights, flying, spiders, social situations, and more.",
       features: ["Fear of Heights", "Fear of Flying", "Social Phobia", "Animal Fears", "Situational Fears"],
-      duration: "60-90 min",
+      // duration: "60-90 min",
       color: "#55C6F7",
       category: "ANXIETY TREATMENT"
     },
@@ -63,7 +63,7 @@ function Services() {
       desc: "Transform your relationship with food and achieve lasting weight loss through subconscious reprogramming.",
       longDesc: "Address emotional eating, cravings, and unhealthy patterns to achieve your ideal weight naturally.",
       features: ["Emotional Eating", "Craving Control", "Metabolism Boost", "Healthy Habits", "Body Image"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#1F5F8B",
       category: "HEALTH & WELLNESS"
     },
@@ -73,7 +73,7 @@ function Services() {
       desc: "Heal emotional wounds, reduce stress, and regain control of your thoughts and feelings.",
       longDesc: "Comprehensive treatment for depression, anxiety, and emotional challenges using proven hypnotherapy techniques.",
       features: ["Depression Relief", "Anxiety Management", "Emotional Healing", "Stress Reduction", "Mood Balance"],
-      duration: "60-90 min",
+      // duration: "60-90 min",
       color: "#7B4BFF",
       category: "MENTAL HEALTH"
     },
@@ -83,7 +83,7 @@ function Services() {
       desc: "Manifest success, confidence, and abundance by reprogramming your subconscious mind.",
       longDesc: "Learn to harness the power of your subconscious to attract abundance, success, and meaningful relationships.",
       features: ["Manifestation", "Abundance Mindset", "Success Programming", "Visualization", "Wealth Consciousness"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#55C6F7",
       category: "PERSONAL GROWTH"
     },
@@ -93,7 +93,7 @@ function Services() {
       desc: "Heal emotional wounds and restore inner peace using ancient Hawaiian healing practices.",
       longDesc: "Experience the powerful Hawaiian practice of reconciliation and forgiveness to clear emotional blocks and restore harmony.",
       features: ["Emotional Cleansing", "Forgiveness", "Inner Peace", "Relationship Healing", "Self-Love"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#1F5F8B",
       category: "SPIRITUAL HEALING"
     },
@@ -103,7 +103,7 @@ function Services() {
       desc: "Explore deep subconscious memories and release karmic patterns affecting your life.",
       longDesc: "Journey into past lives to understand current life challenges, release karmic patterns, and accelerate spiritual growth.",
       features: ["Karmic Healing", "Soul Memory", "Spiritual Growth", "Pattern Release", "Life Purpose"],
-      duration: "90 min",
+      // duration: "90 min",
       color: "#7B4BFF",
       category: "ADVANCED THERAPY"
     },
@@ -113,7 +113,7 @@ function Services() {
       desc: "Heal childhood wounds and release emotional blocks stored in your subconscious.",
       longDesc: "Address and heal deep-seated emotional wounds from childhood that affect your current relationships and self-worth.",
       features: ["Childhood Healing", "Emotional Release", "Self-Love", "Trauma Recovery", "Inner Peace"],
-      duration: "60-90 min",
+      // duration: "60-90 min",
       color: "#55C6F7",
       category: "TRAUMA HEALING"
     },
@@ -123,7 +123,7 @@ function Services() {
       desc: "Support for family dynamics, resolving conflicts, and improving communication between partners, parents, and children.",
       longDesc: "Expert guidance for effective parenting, discipline strategies, and building strong parent-child relationships.",
       features: ["Family Dynamics", "Conflict Resolution", "Parenting Skills", "Child Development", "Family Harmony"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#1F5F8B",
       category: "FAMILY WELLNESS"
     },
@@ -133,7 +133,7 @@ function Services() {
       desc: "Help students overcome academic challenges, improve focus, and build confidence.",
       longDesc: "Specialized coaching for students to improve focus, overcome exam anxiety, and achieve academic success.",
       features: ["Exam Anxiety", "Focus & Concentration", "Confidence Building", "Academic Success", "Study Habits"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#7B4BFF",
       category: "STUDENT SUPPORT"
     },
@@ -143,7 +143,7 @@ function Services() {
       desc: "Professional counselling services for various emotional and mental health challenges.",
       longDesc: "Comprehensive counselling to address emotional issues, life challenges, and personal growth.",
       features: ["Emotional Support", "Life Challenges", "Personal Growth", "Decision Making", "Goal Setting"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#55C6F7",
       category: "COUNSELLING"
     },
@@ -153,7 +153,7 @@ function Services() {
       desc: "Balance your energy centers and promote overall well-being through energy healing.",
       longDesc: "Holistic energy healing to restore balance, remove blockages, and enhance your natural healing abilities.",
       features: ["Energy Balance", "Chakra Healing", "Vitality Boost", "Spiritual Alignment", "Aura Cleansing"],
-      duration: "60 min",
+      // duration: "60 min",
       color: "#1F5F8B",
       category: "ENERGY WORK"
     },
@@ -278,10 +278,10 @@ function Services() {
                   </div>
 
                   {/* Duration */}
-                  <div className="service-duration">
+                  {/* <div className="service-duration">
                     <FaClock className="duration-icon" />
                     <span>Session: {service.duration}</span>
-                  </div>
+                  </div> */}
 
                   {/* Learn More Link */}
                   {/* <motion.a
