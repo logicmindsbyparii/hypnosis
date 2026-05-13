@@ -12,7 +12,7 @@ import { MdPsychology, MdEnergySavingsLeaf } from "react-icons/md";
 import { BiBrain } from "react-icons/bi";
 import "../styles/TherapistCredibility.css";
 
-import therapistImage from "../assets/images/neha-kokra.jpeg";
+import therapistImage from "../assets/images/owner.jpeg";
 
 function TherapistCredibility() {
   const containerRef = useRef(null);
