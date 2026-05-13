@@ -40,12 +40,12 @@ function TherapistCredibility() {
     { icon: <MdEnergySavingsLeaf />, title: "ENERGY GUIDE", color: "#1F5F8B" },
   ];
 
-  const specialities = [
-    { number: "1]", title: "DE-ADDICTIONS", items: ["SMOKING", "CHEWING TOBACCO", "GAMING", "SUGAR", "MOBILE"] },
-    { number: "2]", title: "PHOBIAS", items: [] },
-    { number: "3]", title: "WEIGHT LOSS", items: [] },
-    { number: "4]", title: "DEPRESSION, ANXIETY", items: [] }
-  ];
+  // const specialities = [
+  //   { number: "1]", title: "DE-ADDICTIONS", items: ["SMOKING", "CHEWING TOBACCO", "GAMING", "SUGAR", "MOBILE"] },
+  //   { number: "2]", title: "PHOBIAS", items: [] },
+  //   { number: "3]", title: "WEIGHT LOSS", items: [] },
+  //   { number: "4]", title: "DEPRESSION, ANXIETY", items: [] }
+  // ];
 
   return (
     <section ref={containerRef} className="therapist-section section-padding position-relative overflow-hidden">
@@ -121,7 +121,7 @@ function TherapistCredibility() {
               </div>
             </div>
 
-            <h4 className="section-subheading mt-5">OUR SPECIALITIES</h4>
+            {/* <h4 className="section-subheading mt-5">OUR SPECIALITIES</h4> */}
             <div className="specialities-container">
               {specialities.map((item, index) => (
                 <div key={index} className="speciality-block mb-3">
