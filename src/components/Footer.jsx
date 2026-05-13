@@ -116,13 +116,13 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-              <div className="newsletter-mini">
+              {/* <div className="newsletter-mini">
                 <input type="email" placeholder="Your email" className="newsletter-input-mini" />
                 <motion.button className="newsletter-btn-mini"
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   Subscribe
                 </motion.button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -247,28 +247,28 @@ function Footer() {
           color: rgba(255, 255, 255, 0.7);
         }
         .contact-icon { color: var(--accent-purple); font-size: 1.1rem; }
-        .newsletter-mini { display: flex; gap: 0.5rem; }
-        .newsletter-input-mini {
-          flex: 1;
-          padding: 0.6rem 1rem;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          border-radius: 50px;
-          color: white;
-          font-size: 0.9rem;
-        }
-        .newsletter-input-mini::placeholder { color: rgba(255, 255, 255, 0.5); }
-        .newsletter-input-mini:focus { outline: none; border-color: var(--accent-purple); }
-        .newsletter-btn-mini {
-          padding: 0.6rem 1.2rem;
-          background: linear-gradient(135deg, #7B4BFF, #55C6F7);
-          color: white;
-          border: none;
-          border-radius: 50px;
-          font-weight: 600;
-          font-size: 0.9rem;
-          cursor: pointer;
-        }
+        // .newsletter-mini { display: flex; gap: 0.5rem; }
+        // .newsletter-input-mini {
+        //   flex: 1;
+        //   padding: 0.6rem 1rem;
+        //   background: rgba(255, 255, 255, 0.1);
+        //   border: 1px solid rgba(255, 255, 255, 0.2);
+        //   border-radius: 50px;
+        //   color: white;
+        //   font-size: 0.9rem;
+        // }
+        // .newsletter-input-mini::placeholder { color: rgba(255, 255, 255, 0.5); }
+        // .newsletter-input-mini:focus { outline: none; border-color: var(--accent-purple); }
+        // .newsletter-btn-mini {
+        //   padding: 0.6rem 1.2rem;
+        //   background: linear-gradient(135deg, #7B4BFF, #55C6F7);
+        //   color: white;
+        //   border: none;
+        //   border-radius: 50px;
+        //   font-weight: 600;
+        //   font-size: 0.9rem;
+        //   cursor: pointer;
+        // }
         .footer-bottom { padding: 20px 0; }
         .copyright { color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-bottom: 0; }
         .social-links-footer { display: flex; gap: 1rem; justify-content: flex-end; }
