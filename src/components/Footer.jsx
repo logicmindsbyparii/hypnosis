@@ -116,24 +116,44 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-              {/* <div className="newsletter-mini">
+              <div className="newsletter-mini">
                 <input type="email" placeholder="Your email" className="newsletter-input-mini" />
                 <motion.button className="newsletter-btn-mini"
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   Subscribe
                 </motion.button>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
+        {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="row align-items-center">
-            <div className="col-md-6">
+            
+            {/* 1. Left Column: Copyright */}
+            <div className="col-md-4">
               <p className="copyright">© {currentYear} HypnosisSolutions. All rights reserved.</p>
             </div>
-            <div className="col-md-6 text-md-end">
+
+            {/* 2. Middle Column: Your Agency Link */}
+            <div className="col-md-4 text-center">
+              <p className="agency-credit" style={{ fontSize: "0.85rem", color: "rgba(255, 255, 255, 0.6)", margin: 0 }}>
+                Designed & Developed by{" "}
+                <a 
+                  href="https://logicmindsbyparii.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#55C6F7", textDecoration: "none", fontWeight: "600", transition: "0.3s" }}
+                >
+                  Logic Minds by Parii
+                </a>
+              </p>
+            </div>
+
+            {/* 3. Right Column: Social Links */}
+            <div className="col-md-4 text-md-end">
               <div className="social-links-footer">
                 <motion.a href="https://www.instagram.com/hypnosis_solutions/" className="social-link"
                   whileHover={{ y: -3, color: "#7B4BFF" }} target="_blank" rel="noopener noreferrer">
@@ -147,11 +167,9 @@ function Footer() {
                   whileHover={{ y: -3, color: "#25D366" }} target="_blank" rel="noopener noreferrer">
                   <FaWhatsapp />
                 </motion.a>
-                {/* <motion.a href="#" className="social-link" whileHover={{ y: -3, color: "#FF0000" }}>
-                  <FaYoutube />
-                </motion.a> */}
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -229,38 +247,47 @@ function Footer() {
           color: rgba(255, 255, 255, 0.7);
         }
         .contact-icon { color: var(--accent-purple); font-size: 1.1rem; }
-        // .newsletter-mini { display: flex; gap: 0.5rem; }
-        // .newsletter-input-mini {
-        //   flex: 1;
-        //   padding: 0.6rem 1rem;
-        //   background: rgba(255, 255, 255, 0.1);
-        //   border: 1px solid rgba(255, 255, 255, 0.2);
-        //   border-radius: 50px;
-        //   color: white;
-        //   font-size: 0.9rem;
-        // }
-        // .newsletter-input-mini::placeholder { color: rgba(255, 255, 255, 0.5); }
-        // .newsletter-input-mini:focus { outline: none; border-color: var(--accent-purple); }
-        // .newsletter-btn-mini {
-        //   padding: 0.6rem 1.2rem;
-        //   background: linear-gradient(135deg, #7B4BFF, #55C6F7);
-        //   color: white;
-        //   border: none;
-        //   border-radius: 50px;
-        //   font-weight: 600;
-        //   font-size: 0.9rem;
-        //   cursor: pointer;
-        // }
-        // .footer-bottom { padding: 20px 0; }
+        .newsletter-mini { display: flex; gap: 0.5rem; }
+        .newsletter-input-mini {
+          flex: 1;
+          padding: 0.6rem 1rem;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 50px;
+          color: white;
+          font-size: 0.9rem;
+        }
+        .newsletter-input-mini::placeholder { color: rgba(255, 255, 255, 0.5); }
+        .newsletter-input-mini:focus { outline: none; border-color: var(--accent-purple); }
+        .newsletter-btn-mini {
+          padding: 0.6rem 1.2rem;
+          background: linear-gradient(135deg, #7B4BFF, #55C6F7);
+          color: white;
+          border: none;
+          border-radius: 50px;
+          font-weight: 600;
+          font-size: 0.9rem;
+          cursor: pointer;
+        }
+        .footer-bottom { padding: 20px 0; }
         .copyright { color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-bottom: 0; }
         .social-links-footer { display: flex; gap: 1rem; justify-content: flex-end; }
         .social-link { color: rgba(255, 255, 255, 0.6); font-size: 1.2rem; transition: all 0.3s ease; }
+        /* Check for this at the bottom of Footer.jsx inside <style jsx> */
+
         @media (max-width: 768px) {
           .footer-main { padding: 40px 0; }
           .footer-title { text-align: center; }
           .footer-title::after { left: 50%; transform: translateX(-50%); }
           .footer-links { text-align: center; }
           .contact-info li { justify-content: center; }
+          
+          /* Add this if not already there to center your agency link on phones */
+          .agency-credit {
+            text-align: center;
+            margin: 15px 0;
+          }
+          
           .social-links-footer { justify-content: center; margin-top: 1rem; }
           .copyright { text-align: center; }
         }
