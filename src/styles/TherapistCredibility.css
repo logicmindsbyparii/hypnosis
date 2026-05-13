@@ -1,0 +1,509 @@
+/* styles/TherapistCredibility.css */
+
+:root {
+  --primary: #0F2A44;
+  --secondary: #1F5F8B;
+  --accent-purple: #7B4BFF;
+  --accent-cyan: #55C6F7;
+  --white: #ffffff;
+  --light: #F5F7FA;
+  --gradient-2: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 60px rgba(123, 75, 255, 0.15);
+}
+
+/* Section Base */
+.therapist-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .therapist-section {
+    padding: 60px 0;
+  }
+}
+
+/* Background */
+.therapist-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(123, 75, 255, 0.03) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, rgba(123, 75, 255, 0.1), rgba(85, 198, 247, 0.1));
+  color: var(--primary);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(123, 75, 255, 0.2);
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Left Column - Photo */
+.therapist-photo-wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+.photo-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(123, 75, 255, 0.2), rgba(85, 198, 247, 0.2));
+  border-radius: 40px;
+  transform: rotate(3deg);
+  z-index: 1;
+}
+
+.therapist-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  position: relative;
+  z-index: 2;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Stats Floating Badge */
+.stats-floating-badge {
+  position: absolute;
+  bottom: 30px;
+  right: -10px;
+  background: white;
+  padding: 1.2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  z-index: 3;
+  min-width: 220px;
+  border: 1px solid rgba(123, 75, 255, 0.1);
+}
+
+.stat-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(123, 75, 255, 0.1);
+}
+
+.stat-badge-item:last-child {
+  border-bottom: none;
+}
+
+.stat-badge-icon {
+  font-size: 1.5rem;
+  color: var(--accent-purple);
+}
+
+.stat-badge-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.stat-badge-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Right Column Content */
+.therapist-intro {
+  margin-bottom: 2rem;
+}
+
+.therapist-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.therapist-quote {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent-purple);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: rgba(123, 75, 255, 0.1);
+}
+
+.therapist-quote p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 0;
+  padding-right: 2rem;
+}
+
+.therapist-bio {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Section Subheadings */
+.section-subheading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-subheading::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--gradient-2);
+}
+
+/* Credentials List */
+.credentials-list {
+  margin-bottom: 1.5rem;
+}
+
+.credentials-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credential-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed rgba(123, 75, 255, 0.1);
+}
+
+.credential-bullet {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.credential-text {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ===== NEW STYLES FOR UPDATED SPECIALITIES ===== */
+
+/* Specialities Container */
+.specialities-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.speciality-block {
+  background: rgba(123, 75, 255, 0.02);
+  padding: 1.2rem;
+  border-radius: 12px;
+  border-left: 3px solid var(--accent-purple);
+  transition: all 0.3s ease;
+}
+
+.speciality-block:hover {
+  background: rgba(123, 75, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.speciality-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.3px;
+}
+
+.speciality-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 1.5rem;
+}
+
+.speciality-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.4rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.bullet {
+  color: var(--accent-purple);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Other Areas Container - NEW */
+.other-areas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.other-area-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.6rem 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.other-area-block:hover {
+  background: rgba(123, 75, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.other-bullet {
+  color: var(--accent-purple);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.other-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===== END NEW STYLES ===== */
+
+/* Philosophy Cards */
+.philosophy-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(123, 75, 255, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.philosophy-icon {
+  font-size: 2rem;
+  color: var(--accent-purple);
+  margin-bottom: 1rem;
+}
+
+.philosophy-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+.philosophy-desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .stats-floating-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .therapist-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .therapist-name {
+    font-size: 1.5rem;
+  }
+  
+  .credential-text {
+    font-size: 0.85rem;
+  }
+  
+  .speciality-block {
+    padding: 1rem;
+  }
+  
+  .speciality-title {
+    font-size: 1.1rem;
+  }
+  
+  .speciality-list {
+    margin-left: 1rem;
+  }
+  
+  .speciality-list-item {
+    font-size: 0.9rem;
+  }
+  
+  .other-area-block {
+    padding: 0.5rem 0.8rem;
+  }
+  
+  .other-text {
+    font-size: 0.9rem;
+  }
+  
+  .philosophy-card {
+    padding: 1.2rem;
+  }
+  
+  .philosophy-title {
+    font-size: 1rem;
+  }
+  
+  .philosophy-desc {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .therapist-photo-wrapper {
+    padding: 10px;
+  }
+  
+  .stats-floating-badge {
+    padding: 1rem;
+    min-width: auto;
+  }
+  
+  .stat-badge-value {
+    font-size: 1rem;
+  }
+  
+  .stat-badge-label {
+    font-size: 0.75rem;
+  }
+  
+  .section-subheading {
+    font-size: 1.2rem;
+  }
+  
+  .credentials-list .row {
+    flex-direction: column;
+  }
+  
+  .credentials-list .col-md-6 {
+    width: 100%;
+  }
+  
+  .specialities-container {
+    gap: 1rem;
+  }
+  
+  .speciality-title {
+    font-size: 1rem;
+  }
+  
+  .speciality-list-item {
+    font-size: 0.85rem;
+  }
+  
+  .other-text {
+    font-size: 0.85rem;
+  }
+  
+  .other-bullet {
+    font-size: 1rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .photo-backdrop,
+  .speciality-block,
+  .other-area-block,
+  .philosophy-card,
+  .credential-list-item {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .photo-backdrop {
+    animation: none !important;
+  }
+  
+  .speciality-block:hover,
+  .other-area-block:hover {
+    transform: none !important;
+  }
+}
+

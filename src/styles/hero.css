@@ -1,0 +1,192 @@
+/* styles/hero.css */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #ffffff; /* Clean white background */
+  /* Increased padding to ensure text isn't cut off by the fixed Navbar */
+  padding-top: 140px; 
+  padding-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 5;
+}
+
+.hero-text-content {
+  /* Default Desktop: Left Aligned */
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0F2A44;
+  margin-bottom: 1.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7B4BFF, #55C6F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.cta-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  /* Default Desktop: Left Aligned */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-main-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/* Trust Badge Styles */
+.trust-badge-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 1.2rem;
+  background: rgba(123, 75, 255, 0.05);
+  border: 1px solid rgba(123, 75, 255, 0.1);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7B4BFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #55C6F7;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #55C6F7;
+}
+
+/* Button Styles */
+.btn-primary-gradient {
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #7B4BFF, #55C6F7);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(123, 75, 255, 0.2);
+}
+
+.btn-outline-gradient {
+  padding: 0.9rem 2.5rem;
+  background: transparent;
+  color: #0F2A44;
+  border: 2px solid #7B4BFF;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gradient:hover {
+  background: rgba(123, 75, 255, 0.05);
+  color: #7B4BFF;
+}
+
+/* ── MOBILE & TABLET (Max 991px) ── */
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 120px; /* Adjust for smaller mobile headers */
+    padding-bottom: 40px;
+  }
+
+  .hero-text-content {
+    /* Center text on mobile */
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-wrapper {
+    /* Center and stack buttons on mobile */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-primary-gradient, 
+  .btn-outline-gradient {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-main-img {
+    max-width: 450px; /* Slightly smaller on mobile */
+  }
+}
+
+/* Scroll Indicator */
+.scroll-indicator-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.scroll-arrow {
+  color: #7B4BFF;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
