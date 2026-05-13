@@ -116,13 +116,13 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-              <div className="newsletter-mini">
+              {/* <div className="newsletter-mini">
                 <input type="email" placeholder="Your email" className="newsletter-input-mini" />
                 <motion.button className="newsletter-btn-mini"
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   Subscribe
                 </motion.button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
